@@ -51,5 +51,19 @@
      import FOREIGN SCHEMA public limit to (B) from server foreign_server into ft;
      ```
 
-5. 
+5. ### 相关语句
+
+   ```sql
+   select * from pg_foreign_data_wrapper;
+   
+   select * from pg_foreign_server ;
+   
+   select * from pg_user_mappings;
+   
+   ALTER SERVER foreign_server OPTIONS (DROP host, DROP port);
+   ```
+
+   
+
+6. 
 
