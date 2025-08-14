@@ -100,7 +100,7 @@
    执行如下命令：
 
    ```shell
-   docker compose -f docker-compose-app.yml run --rm  certbot certonly --webroot --webroot-path /usr/share/certbot/www/ -d gw.songker.com
+   docker-compose -f docker-compose.yml run --rm  certbot certonly --webroot --webroot-path /usr/share/certbot/www/ -d gw.songker.com
    ```
 
    第一次运行会提示你填写邮箱地址，随便填。
