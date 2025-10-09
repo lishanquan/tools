@@ -5,7 +5,14 @@
 进入 PostgreSQL 命令行：
 
 ```bash
-docker exec -it your-postgres-container psql -U your_user -d your_db
+-- 进入容器
+docker exec -it your-postgres-container bash
+
+-- 登录数据库
+psql -U postgres
+
+-- 进入某个数据库
+\c chow_core
 ```
 
 然后运行以下 SQL：
